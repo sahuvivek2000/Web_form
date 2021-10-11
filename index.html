@@ -5,16 +5,122 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
-    <style>
-        body {
-            background-color: black;
-            color: aquamarine;
-        }
-    </style>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://kit.fontawesome.com/d5580bc6d6.js" crossorigin="anonymous"></script>
+    <title>Flex</title>
 </head>
 
 <body>
+
+    <nav class="navbar">
+        <div class="nav-logo">
+            <a href="#"><img src="./images/idea.png" alt=""></a>
+        </div>
+        <ul class="nav-list" id="nav-list">
+            <li class="nav-item">Home</li>
+            <li class="nav-item">About Us</li>
+            <li class="nav-item">Contact Us</li>
+        </ul>
+        <div class="menu" id="toggle-btn">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+    </nav>
+
+
+    <!-- card start -->
+    <div class="card">
+        <div class="container">
+            <h3 id="">Admission Form</h3>
+
+            <div class="form">
+                <div class="wrapper">
+                    <div class="input-data">
+                        <input type="text" required>
+                        <label>First Name</label>
+                    </div>
+                    <div class="input-data">
+                        <input type="text" required>
+                        <label>Last Name</label>
+                    </div>
+                    <div class="input-data">
+                        <input type="text" required>
+                        <label>Aadhar No</label>
+                    </div>
+                    <div class="input-data">
+                        <input type="text" required>
+                        <label>Religion</label>
+                    </div>
+                    <div class="gender">
+                        <p>
+                            Gender
+                        </p>
+                        <label>
+                            <input type="radio" name="male" id="gender">
+                            <i class='fas fa-male'></i>
+                        </label>
+                        <label>
+                            <input type="radio" name="female" id="gender">
+                            <i class='fas fa-female'></i>
+                        </label>
+                    </div>
+                    <div class="drp">
+                        <div class="dropdown">
+                            <div class="dropdown-select">
+                                <span class="select">Highest Education</span>
+                                <i class="fas fa-caret-down"></i>
+                            </div>
+                            <div class="dropdown-list">
+                                <div class="dropdown-item">10th</div>
+                                <div class="dropdown-item">12th</div>
+                                <div class="dropdown-item">Graduate</div>
+                                <div class="dropdown-item">Post Graduate</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="checkbox">
+                        <p>Category</p>
+                        <label for="">
+                            <input type="checkbox" name="c" id="c">
+                            <span>SC</span>
+                        </label>
+                        <label for=""><input type="checkbox" name="c" id="c">
+                            <span>OBC</span>
+                        </label>
+                        <label for="">
+                            <input type="checkbox" name="c" id="c">
+                            <span>GEN</span>
+                        </label>
+                    </div>
+
+                    <div class="date">
+                        <p>DOB</p>
+                        <input type="date">
+                    </div>
+
+                    <div class="input-data">
+                        <input type="tel" maxlength="10" required>
+                        <label>Number</label>
+                    </div>
+
+                    <div class="submit-btn">
+                        <input type="submit" name="s" id="s">
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- card end -->
+
+
 
 
 </body>
