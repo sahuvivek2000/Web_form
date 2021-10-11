@@ -112,6 +112,7 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: #343a40;
+  font-family: "Poppins", sans-serif;
 }
 .wrapper {
   width: 80%;
