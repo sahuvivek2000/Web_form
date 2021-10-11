@@ -60,8 +60,10 @@
   padding: 6%;
   margin: 10% 28%;
   border-radius: 50px;
+  border: 1px solid rgba(128, 128, 128, 0.226);
   background: #343a40;
-  box-shadow: 20px 20px 60px #2c3136, -20px -20px 60px #3c434a;
+  box-shadow: 5px 5px 30px rgba(128, 128, 128, 0.226),
+    -5px -5px 20px rgba(128, 128, 128, 0.226);
   text-align: center;
   color: #b3b8bd;
   font-family: Verdana, sans-serif;
