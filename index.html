@@ -39,81 +39,87 @@
 
             <div class="form">
                 <div class="wrapper">
-                    <div class="input-data">
-                        <input type="text" required>
-                        <label>First Name</label>
-                    </div>
-                    <div class="input-data">
-                        <input type="text" required>
-                        <label>Last Name</label>
-                    </div>
-                    <div class="input-data">
-                        <input type="text" required>
-                        <label>Aadhar No</label>
-                    </div>
-                    <div class="input-data">
-                        <input type="text" required>
-                        <label>Religion</label>
-                    </div>
-                    <div class="gender">
-                        <p>
-                            <strong>Gender</strong>
-                        </p>
-                        <label>
-                            <input type="radio" name="male" id="gender">
-                            <i class='fas fa-male'></i>
-                        </label>
-                        <label>
-                            <input type="radio" name="female" id="gender">
-                            <i class='fas fa-female'></i>
-                        </label>
-                    </div>
-                    <div class="drp">
-                        <div class="dropdown">
-                            <div class="dropdown-select">
-                                <span class="select">Highest Education</span>
-                                <i class="fas fa-caret-down"></i>
+                    <form action="" name="form">
+                        <div class="input-data">
+                            <input type="text" id="fname" name="fname" required />
+                            <label>First Name</label>
+                        </div>
+                        <div class="input-data">
+                            <input type="text" id="lname" required />
+                            <label>Last Name</label>
+                        </div>
+                        <div class="input-data">
+                            <input type="text" id="aNo" required>
+                            <label>Aadhar No</label>
+                        </div>
+                        <div class="input-data">
+                            <input type="text" id="religion" required>
+                            <label>Religion</label>
+                        </div>
+                        <div class="gender">
+                            <p>
+                                <strong>Gender</strong>
+                            </p>
+                            <label>
+                                <input type="radio" name="gender" value="Male" id="gender">
+                                <i class='fas fa-male'></i>
+                            </label>
+                            <label>
+                                <input type="radio" name="gender" value="Female" id="gender">
+                                <i class='fas fa-female'></i>
+                            </label>
+                        </div>
+                        <div class="drp">
+                            <div class="dropdown">
+                                <div class="dropdown-select">
+                                    <span class="select" id="select">Highest Education</span>
+                                    <i class="fas fa-caret-down"></i>
+                                </div>
+                                <div class="dropdown-list" id="drop-list">
+                                    <div class="dropdown-item first" id="drop-item">10th</div>
+                                    <div class="dropdown-item sec" id="drop-item">12th</div>
+                                    <div class="dropdown-item third" id="drop-item">Graduate</div>
+                                    <div class="dropdown-item fourth" id="drop-item">Post Graduate</div>
+                                </div>
                             </div>
-                            <div class="dropdown-list">
-                                <div class="dropdown-item">10th</div>
-                                <div class="dropdown-item">12th</div>
-                                <div class="dropdown-item">Graduate</div>
-                                <div class="dropdown-item">Post Graduate</div>
-                            </div>
+
                         </div>
 
-                    </div>
+                        <div class="checkbox">
+                            <p><strong>Category</strong></p>
+                            <label>
+                                <input type="radio" name="c" value="SC" class="c" id="sc">
+                                <span>SC</span>
+                            </label>
+                            <label>
+                                <input type="radio" class="c" value="OBC" name="c" id="obc">
+                                <span>OBC</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="c" value="GEN" class="c" id="gen">
+                                <span>GEN</span>
+                            </label>
+                        </div>
 
-                    <div class="checkbox">
-                        <p><strong>Category</strong></p>
-                        <label for="">
-                            <input type="checkbox" name="c" id="c">
-                            <span>SC</span>
-                        </label>
-                        <label for=""><input type="checkbox" name="c" id="c">
-                            <span>OBC</span>
-                        </label>
-                        <label for="">
-                            <input type="checkbox" name="c" id="c">
-                            <span>GEN</span>
-                        </label>
-                    </div>
+                        <div class="date">
+                            <p><strong>DOB</strong></p>
+                            <input type="date" id="date">
+                        </div>
 
-                    <div class="date">
-                        <p><strong>DOB</strong></p>
-                        <input type="date">
-                    </div>
+                        <div class="input-data">
+                            <input type="tel" maxlength="10" id="num" required>
+                            <label>Number</label>
+                        </div>
 
-                    <div class="input-data">
-                        <input type="tel" maxlength="10" required>
-                        <label>Number</label>
-                    </div>
+                        <div class="submit-btn">
+                            <input type="submit" name="s" id="submit">
+                            <!-- <button id="submit">Submit</button> -->
+                        </div>
+                        <div class="submit-btn">
+                            <input type="reset" name="s" id="submit">
+                        </div>
 
-                    <div class="submit-btn">
-                        <input type="submit" name="s" id="s">
-                    </div>
-
-
+                    </form>
 
                 </div>
             </div>
@@ -122,6 +128,67 @@
         </div>
     </div>
     <!-- card end -->
+
+
+    <!-- <div class="card ">
+        <div class="container">
+            <h1 id="">Admission Form</h1>
+
+            <div class="form">
+                <div class="wrapper">
+
+                    <div class="data">
+
+                        <label id="n">Name</label>
+
+                    </div>
+                    <div class="data">
+
+                        <label id="an">Aadhar No</label>
+                    </div>
+                    <div class="data">
+
+                        <label id="r">Religion</label>
+                    </div>
+                    <div class="data">
+
+                        <label id="no">Number</label>
+
+                    </div>
+                    <div class="gender">
+                        <p>
+                            <strong>Gender</strong>
+                        </p>
+
+
+                    </div>
+                    <div class="drp">
+                        <p><strong>Education</strong></p>
+                    </div>
+
+                    <div class="checkbox">
+                        <p><strong>Category</strong></p>
+
+                    </div>
+
+                    <div class="date">
+                        <p><strong>DOB</strong></p>
+
+                    </div>
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+        </div>
+    </div> -->
+
+    <script src="./script/script.js"></script>
 
 
 
